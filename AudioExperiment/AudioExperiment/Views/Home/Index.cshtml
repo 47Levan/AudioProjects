@@ -1,0 +1,23 @@
+﻿
+
+<h2>Web Audio Api Equalizer</h2>
+<div class="eq">
+    <div class="controls">
+        <label>Splitter</label>
+        <input type="range" value="0" step="0.1" min="-1" max="1" oninput="changeGain(this.value);"></input>
+        <label>Panner</label>
+        <input type="range" value="0" step="0.1" min="-1" max="1" oninput="changePanner(this.value);"></input>
+
+    </div>
+   
+</div>
+<h3>André Michelle <a href="www.audiotool.com/track/volution/">Volution</a></h3>
+<audio id="player" controls crossorigin>
+    
+    <source src="~/Audio/Test_3_hours.mp3" type="audio/mpeg">
+    <source src="http://api.audiotool.com/track/volution/play.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/Player.js"></script>
+<link href="~/Content/Site.css" rel="stylesheet" />
